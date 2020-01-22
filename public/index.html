@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alexander G Portfolio</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+</head>
+<body>
+    <h1 class="text-4xl font-bold text-center text-grey-500 pt-4 py-6 mx-auto">AlexanderG.Me</h1>
+
+    <div class="container">
+        <div class="flex">
+            <div class="flex-1 text-center rounded">
+                <div class="flex flex-col items-center mx-auto">
+                    <div class="flex-shrink-0 flex-1 align-middle">
+                        <img src="./build/img/logo.svg" alt="SVG Map of Westport" class="hover:shadow-2xl rounded-lg object-scale-down h-64 mt-5 shadow-md">
+                    </div>
+                    <br>
+                    <div class="block mt-4 ml-6 flex-1">
+                        <h3 class="text-3xl font-bold text-center text-blue-700">Urban Planner by Day, <br> <code>Coder</code> by <a href="#" class="text-gray-700 hover:underline" onmouseover="chBackcolor('#2D3748'); changeColor" onmouseout="chBackcolor('white');" onClick="chBackcolor('#2D3748'); return false;"> Night </a> </h3>
+                    </div>
+                    <div class="hover:shadow-2xl">
+                        <button class="focus:outline-none focus:shadow-outline bg-blue-500 hover:bg-indigo-600 shadow-md active:bg-indigo-700 text-white font-bold py-2 px-4 mt-4 rounded shadow-md"> See more</button>
+
+                    </div>
+                </div>
+        </div>
+</div>
+</body>
+<script>
+function chBackcolor(color) {
+   document.body.style.background = color;
+}
+</script>
+<script>
+
+    document.getElementById('change').oncMouseOver = changeColor;   
+
+    function changeColor() {
+        document.body.style.color = "white";
+        return false;
+    }   
+
+</script>
+</html>
