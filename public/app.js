@@ -25,7 +25,7 @@ function navCheck(entries) {
         };
         if (entry.isIntersecting) {
             bubble.style.setProperty("left", `${directions.left}px`);
-            bubble.style.setProperty("bottom", '13px');
+            bubble.style.setProperty("bottom", '20px');
             bubble.style.setProperty("width", `${directions.width}px`);
             bubble.style.setProperty("height", '4px');
             // should be 4px
