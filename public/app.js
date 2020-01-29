@@ -3,7 +3,7 @@ const bubble = document.querySelector('.bubble');
 const gradients = [
     "linear-gradient(to right top, #f46b45, #eea849)",
     "linear-gradient(to right top, #005c97, #363795)",
-    "linear-gradient(to right top, #e53935, #e35d5b)"
+    "linear-gradient(to top, #606c88, #3f4c6b)"
 ];
 
 const options = {
