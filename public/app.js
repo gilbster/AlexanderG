@@ -7,7 +7,7 @@ const gradients = [
 ];
 
 const options = {
-    threshold: 0.7
+    threshold: 0.5
 };
 
 let observer = new IntersectionObserver(navCheck, options);

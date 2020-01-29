@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio for AlexanderG</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <h1>Alexander G</h1>
             <ul>
-                <li><a data-page="home" href="#home"><p>Home</p>
+                <li><a data-page="about" href="#about"><p>About</p>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg></a></li>
                 <li><a data-page="projects" href="#projects"><p>Projects</p>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg>
@@ -24,16 +25,92 @@
         </nav>
     </header>
     <main>
-        <section data-index="0" class="home" id="home">
-            <h2>Home</h2>
+        <section data-index="0" class="about" id="about">
+            <div class="content"> <h2>About</h2> <img src="./build/img/alex.jpg" class="me" alt="headshot"><h3>My name is Alexander Gilberson.
+                I have a background in Urban Planning and design. I have experience with Urban Planning and Public Policy. I have noticed the need for citizens to better understand
+                planning information and for planners to be able to showcase information easily and accesibly.
+                My goal in learning to code is to help make urban planning more accesible and more fun.</h3><br>
+                <svg width="100" height="100" class="arrow" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="line-arrow-down2" id="a" d="M48.9919 5L48.9919 95M48.9919 95L85 59.1525M48.9919 95L13.75 59.1525" stroke="rgba(99,91,91,1)" stroke-width="3px" stroke-linecap="round" style="animation-duration: 1.2s;"></path></svg></div>
         </section>
         <section data-index="1" class="projects" id="projects">
-            <h2>Projects</h2>
+            
+                <h2>Projects</h2>
+                <div class="content">
+                <div class="card">
+                <img src="./build/img/viewmyart.png" alt="Avatar" style="width:100%">
+                <div class="inside">
+                  <h4><b>Viewmy.art</b></h4> 
+                  <p>A website to help artist showcase thier art.</p> 
+                 </div>
+                </div>
+                <div class="card">
+                    <img src="./build/img/xyz.png" alt="Avatar" style="width:100%">
+                    <div class="inside">
+                      <h4><b>UrbanPlanning.xyz</b></h4> 
+                      <p>A website to help explain what urban planning is.</p> 
+                     </div>
+                    </div>
+                    <div class="card">
+                        <img src="./build/img/kctod.png" alt="Avatar" style="width:100%">
+                        <div class="inside">
+                          <h4><b>KC TOD</b></h4> 
+                          <p>A website to promoting Transit Oriented Devlopment (TOD)</p> 
+                         </div>
+                        </div>
+                        <div class="card">
+                            <img src="./build/img/alexanderg.png" alt="Avatar" style="width:100%">
+                            <div class="inside">
+                              <h4><b>Personal Portfolio</b></h4> 
+                              <p>Urban Planning Projects and Photography.</p> 
+                             </div>
+                            </div>
+            </div>
         </section>
         <section data-index="2" class="contact" id="contact">
-            <h2>Contact</h2>
+            <div class="content"><h2>Contact</h2>
+            <form name='contact' method='post'><input type='hidden' name='form-name' value='contact' />
+                <p>
+                  <label>Name</label><br><input type="text" name="name" />
+                </p>
+                <p>
+                  <label>Email</label><br><input type="email" name="email" />
+                </p>
+                <p>
+                  <label>Message <br><textarea id="message" name="message" placeholder="Please send me more information" required></textarea></label>
+                </p>
+                  <button type="submit">Send</button>
+                </p>
+              </form>
+            </div>
         </section>
     </main>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 900, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
     <script src="./app.js"></script>
 </body>
 </html>
