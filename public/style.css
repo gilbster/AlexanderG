@@ -79,7 +79,7 @@ section h2 {
     color: white;
     margin-bottom: 1rem;
     transition: all .8s ease;
-    margin-left: 1rem;
+    margin-top: 1rem;
 }
 section h3 {
     font-size: 1.3rem;
@@ -89,9 +89,13 @@ section h3 {
 
 .about {
     background: linear-gradient(to right top, #f46b45, #eea849);
+    display: flex;
+    flex-direction: column;
 }
 .projects {
     background: linear-gradient(to right top, #005c97, #363795);
+    display: flex;
+    flex-direction: column;
 }
 .contact {
     background: linear-gradient(to right top, #e53935, #e35d5b);
@@ -137,7 +141,7 @@ svg:hover {
 }
 
 .me {
-    width: 30%;
+    width: 27%;
     border-radius: 1rem;
     padding: 0.5rem;
     object-fit: contain;
@@ -153,24 +157,28 @@ em {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 35%;
+    width: 38%;
     border-radius: 5px;
     background-color: white;
-    margin: 1.4rem;
-    min-width: 200px;
+    margin: 1.5rem;
+    min-width: 220px;
     transition: all 0.8s ease;
     line-height: 1.6;
     z-index: 1;
-    flex-shrink: 1;
   }
   
+  .card a {
+    text-decoration: none;
+    color: #2d3748;
+  }
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transform: scale(1.1);
   }
   
-  img {
+  .card img {
     border-radius: 5px 5px 0 0;
+    object-fit: cover;
   }
   
   .inside {
