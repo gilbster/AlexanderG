@@ -98,7 +98,9 @@ section h3 {
     flex-direction: column;
 }
 .contact {
-    background: linear-gradient(to right top, #e53935, #e35d5b);
+  background: #606c88; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #606c88, #3f4c6b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #606c88, #3f4c6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .bubble {
