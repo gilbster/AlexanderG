@@ -78,19 +78,24 @@
         </section>
         <section data-index="2" class="contact" id="contact">
             <div class="content"><h2>Contact</h2>
-            <form name='contact' method='post'><input type='hidden' name='form-name' value='contact' />
-                <p>
-                  <label>Name</label><br><input type="text" name="name" />
-                </p>
-                <p>
-                  <label>Email</label><br><input type="email" name="email" />
-                </p>
-                <p>
-                  <label>Message <br><textarea id="message" name="message" placeholder="Please send me more information" required></textarea></label>
-                </p>
-                  <button type="submit">Send</button>
-                </p>
-              </form>
+            
+<form
+  action="https://formspree.io/xlebezya"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
             </div>
         </section>
     </main>
